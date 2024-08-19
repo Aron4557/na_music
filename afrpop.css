@@ -1,0 +1,118 @@
+/* Reset some default styles */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+/* Navbar styling */
+.navbar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    color: #fff;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 64, 255, 0.6); /* Glowing green shadow for the navbar */
+    padding: 10px 0; /* Add some padding */
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.namc-picture {
+    width: 30vw; /* Increase the width */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position it on the left side */
+    left: -7vw; /* Adjust the distance from the left */
+    top: -7vw; /* Align to the top edge */
+}
+
+.navbar .logo {
+    font-size: 4vw; /* Responsive font size */
+    font-weight: bold;
+    background: linear-gradient(45deg, #0033a0 20%, #ffffff 20% 40%, #ffd100 40% 60%, #00853f 60% 80%, #ff0000 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Cinzel', serif;
+    margin: 0 2vw; /* Adjust spacing around the logo */
+}
+
+.navbar .menu-item {
+    margin: 0 1vw; /* Responsive margin */
+}
+
+.navbar .menu-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5vw; /* Responsive font size */
+    background-color: blue; /* Green background */
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(18, 18, 220, 0.8); /* Glowing green shadow */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transition for glowing and scaling */
+}
+
+.navbar .menu-item a:hover {
+    color: #000;
+    background-color: rgb(10, 179, 236); /* Darker green on hover */
+    box-shadow: 0 0 20px blue(0, 255, 0, 1); /* Brighter green shadow on hover */
+    transform: scale(1.1); /* Slightly increase the size on hover */
+}
+
+/* Circle navigation below the navbar */
+.circle-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+.circle-navigation .circle {
+    width: 10vw; /* Responsive width */
+    height: 10vw; /* Responsive height */
+    border-radius: 50%;
+    margin: 0 1vw; /* Responsive margin */
+    background-size: cover; /* Ensure the background image covers the circle */
+    background-position: center; /* Center the background image */
+    box-shadow: 0 0 15px rgba(19, 19, 220, 0.6); /* Glowing green shadow */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transition for glowing and scaling */
+}
+
+.circle-navigation .circle:hover {
+    box-shadow: 0 0 25px rgb(15, 153, 199); /* Brighter glowing shadow on hover */
+    transform: scale(1.1); /* Slightly increase the size on hover */
+}
+
+/* Add specific images to circles */
+#exit {
+    background-image: url('afroyeezir.jpeg'); /* Replace with actual image URL */
+}
+
+#kaboy {
+    background-image: url('page.jpeg'); /* Replace with actual image URL */
+}
+
+#manxebe {
+    background-image: url('stella.jpeg'); /* Replace with actual image URL */
+}
+
+#vikta {
+    background-image: url(''); /* Replace with actual image URL */
+}
+
+#king {
+    background-image: url(''); /* Replace with actual image URL */
+}
+

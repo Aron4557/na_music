@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    width: 100%;
+    flex: 1;
+}
+
+.navbar {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 8px solid #333;
+    background-color: lightblue;
+    padding: 0 20px; /* Add padding for responsiveness */
+    box-sizing: border-box;
+}
+
+.icon {
+    width: 200px;
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    background-color: #3498db;
+    border-radius: 5px;
+    
+}
+
+.menu-bar {
+    width: calc(100% - 220px); /* Adjust for icon width and padding */
+    display: flex;
+    justify-content: flex-end; /* Align menu items to the end */
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    margin-right: 20px;
+    position: relative;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease, transform 0.5s ease;
+    background-color: #444;
+    border-radius: 5px;
+}
+
+ul li a:hover {
+    color: rgb(223, 31, 31);
+    transform: scale(1.1);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #666;
+    width: 160px;
+    z-index: 1;
+    top: calc(100% + 5px);
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-content ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content ul li a {
+    color: yellow;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    background-color: #666;
+}
+
+.dropdown-content ul li a:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
+.fa-chevron-down {
+    margin-left: 5px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+#searchInput {
+    width: 150px;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #666;
+    background-color: white;
+    color: black;
+}
+
+#searchSubmit {
+    background-color: #666;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#searchSubmit:hover {
+    background-color: #444;
+}
+
+.genres {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 40px 0 20px 0; /* Added margin-top to push the genre boxes lower */
+}
+
+.genre-box {
+    width: 22%;
+    height: 200px;
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+
+.genre-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.genre-box h3 {
+    color: black;
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(212, 212, 25);
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    top: calc(100% - 80px); /* Adjusted to move the text lower */
+}
+
+.genre-box:hover {
+    transform: scale(1.1);
+}
+
+.larger-boxes {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.larger-box {
+    width: 45%;
+    height: 50vh; /* Adjusted height */
+    background-color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+@media(max-width: 12000px){
+    .larger-box{
+        width: 45%;
+        height: 40vh;
+
+    }
+}
+@media(max-width:768px){
+    .larger-box{
+        width: 100%;
+        height: 30vh;
+        margin-bottom: 10px;
+    }
+}
+@media(max-width:480px){
+    .larger-box{
+        width: 100%;
+        height: 25vh;
+
+    }
+}
+.larger-box h3 {
+    color: black;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    text-align: center;
+    background-color: pink;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+    top: calc(100% - 40px);
+    padding: 5px 10px;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Changed to contain */
+}
+
+.larger-box.playlist {
+    position: relative;
+}
+
+.video-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Ensure it is below the circle */
+}
+
+video {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100%; /* Ensure the video fits within the container */
+    object-fit: cover; /* Ensure the video covers the container */
+    border-radius: 10px; /* Optional: for rounded corners */
+}
+
+.circle {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    background-color: #ff6347; /* Fallback color */
+    border-radius: 50%; /* Makes it a circle */
+    position: absolute; /* Position it absolutely within the larger-box */
+    bottom: 40px; /* Adjust the distance from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center it exactly */
+    z-index: 2; /* Ensure it appears above the video */
+    margin: 0; /* Remove default margin */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for better visibility */
+    background-image: url('p.jpeg'); /* Path to your image */
+    background-size: cover; /* Ensure the image covers the circle */
+    background-position: center; /* Center the image inside the circle */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    border: 5px solid transparent;
+    border-image: linear-gradient(45deg, green, dark green);
+    border-image-slice: 1;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.circle:active {
+    transform: translateX(-50%) scale(2); /* Enlarge the circle on touch/click */
+}
+
+.circle:hover {
+    transform: translateX(-50%) scale(1.2); /* Enlarge the circle on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .icon {
+        width: 180px; /* Adjust size */
+    }
+
+    .logo {
+        font-size: 22px; /* Adjust font size */
+    }
+
+    .menu-bar {
+        width: calc(100% - 200px); /* Adjust for smaller icon width */
+    }
+
+    ul li a {
+        padding: 12px 15px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 768px) {
+    .icon {
+        width: 150px; /* Adjust size */
+    }
+
+    .logo {
+        font-size: 20px; /* Adjust font size */
+    }
+
+    .menu-bar {
+        width: calc(100% - 160px); /* Adjust for smaller icon width */
+    }
+
+    ul li a {
+        padding: 10px 12px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .icon {
+        width: 120px; /* Adjust size */
+    }
+
+    .logo {
+        font-size: 18px; /* Adjust font size */
+    }
+
+    .menu-bar {
+        width: calc(100% - 120px); /* Adjust for smaller icon width */
+    }
+
+    ul {
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    ul li {
+        margin-right: 0;
+        margin-bottom: 10px; /* Add space between items */
+    }
+
+    ul li a {
+        padding: 8px 10px; /* Adjust padding */
+        font-size: 14px; /* Adjust font size */
+    }
+}

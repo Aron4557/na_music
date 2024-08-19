@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Playlist</title>
+    <link rel="stylesheet" href="kwaito.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-content">
+            <img src="namc.png" alt="Namc" class="namc-picture">
+            <div class="menu-item"><a href="index.html">HOME</a></div>
+            <div class="logo">
+                <span>Kwaito Music</span>
+            </div>
+            <div class="menu-item"><a href="#">ARTIST BIO</a></div>
+        </div>
+        <div class="circle-navigation">
+            <div class="circle" id="exit"></div>
+            <div class="circle" id="kaboy"></div>
+            <div class="circle" id="manxebe"></div>
+            <div class="circle" id="vikta"></div>
+            <div class="circle" id="king"></div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/namusic55" class="social-icon instagram" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" class="social-icon facebook" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/+264818467255" class="social-icon whatsapp" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:someone@example.com" class="social-icon email" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+    <div class="content-section">
+        <p class="text">Exit Rockaz</p>
+        <div class="box-container">
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/1.mp3?alt=media&token=bdfc18f5-78a9-4c6f-a94e-0eddd5dbce0c">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Kondjifa</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/2.mp3?alt=media&token=50418741-a8be-4c3f-9892-9b95c051e7e4">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Die helle Box</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/7.mp3?alt=media&token=3e58dbb8-0fb4-4632-a7ad-4e47f1058020">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">TeacherBoy</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/3.mp3?alt=media&token=793f65d0-62a3-4975-8fb4-6cb2c882ad08">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Parking</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/8.mp3?alt=media&token=fe6bab4d-b318-49bb-b3f4-934ab4b8a066">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Toti Ngaa FT Gazza</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/9.mp3?alt=media&token=030cf560-ad06-4694-8708-d674cc58d2a5">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">okaRecharger FT King Elegant</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/5.mp3?alt=media&token=4f7f81ca-0ed5-4aba-a30e-bc0cd2ccda1d">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title"> No Body</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/6.mp3?alt=media&token=70ddc85d-b72d-4ff6-b016-838249c78dd5">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">I am Rockaz</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/10.mp3?alt=media&token=615ca1cb-7a3d-4f0d-a713-bd52159ef06b">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Mood FT Young T</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-section">
+        <p class="text">kaboy Kamakili</p>
+        <div class="box-container">
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/Kaboy%20Kamakili%20-%20Kukuta%20(Official%20Video).mp3?alt=media&token=2f15cca1-f730-458c-98d3-f9ced487cfc7">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Kukuta</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/Kaboy%20Kamakili%20-%20Odula%20Yipe%20(feat.%20Markes%20Haufiku).mp3?alt=media&token=f2ecba02-443f-4f55-8a22-addcd6a490f6">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Odule Yipe</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/Kaboy%20Kamakili%20-%20Otse%20Aalumentu%20New%20Single.mp3?alt=media&token=a0966fda-b81d-4d76-8763-87a29efc6b39">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Otse Aalumentu</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/Kaboy%20Kamakili%20-%20Shikisha.mp3?alt=media&token=2dfb0d62-71f0-4500-bc4c-0c441759087c">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Shikisha</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/Kaboy%20Kamakili%20-%20The%20Difference%20(Official%20Music%20Video).mp3?alt=media&token=1b09233d-420a-4a16-b552-b6bec5006c73">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">The difference</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/Kaboy%20Kamakili%20ft%20Manxebe%20%20Stopeni%20kwiibocha.mp3?alt=media&token=24b966d6-adb2-4ed3-9ffa-ada223052ea3">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title"> stopeni okwiibocha FT manxebe</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/Kaboy_kamakili%20(%20Apartheid%20Policy)official%20Audio%202021.mp3?alt=media&token=dac816eb-db79-4ff2-b371-9eb1fe932059">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Apartheid policy</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/Kalunga.mp3?alt=media&token=6a1160eb-1d07-43a2-90bd-a69cf25bff5c">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Kalunga</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/Kaboy%20Kamakili%20%26%20Shalongo%20-%20INOTILA%20(Official%20video).mp3?alt=media&token=aa3cc94b-6f46-44b9-b7c5-b034293e7ebb">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Inotila</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-section">
+        <p class="text">Young T</p>
+        <div class="box-container">
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/Young%20T%20WokOngha_N.F.N.O.%20(Official%20Music%20Video).mp3?alt=media&token=d0c2b28c-47b0-427e-90a7-e436d69777f1">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">NFNO</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/videoplayback.m4a?alt=media&token=fd9590b4-cd0b-4adf-a41d-66e1bb593490">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Iitilasha</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/Young%20T%20WokOngha_Okati.mp3?alt=media&token=807991bc-7cd1-4f29-90a1-f908a0255276">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Okati</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/Young%20T%20WokOngha_Wiibalanca.mp3?alt=media&token=c72369e6-e49e-4a7f-a4ac-9a0fc29761af">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Wiibalance</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/Young%20T%20Efiku%20Lonena%20Official%20Audio.mp3?alt=media&token=c0afe293-06ee-4483-9949-22e35a1d1efc">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Efiku Lonena</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/Young%20T%20WokOngha_Good%20Night.mp3?alt=media&token=093a8659-4f5d-4c3c-b484-44b7adbb2898">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Good night</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/tomp3.cc%20-%20Young%20T%20WokOnghaWorried%20About%20My%20Life.mp3?alt=media&token=c836f2f1-bd79-426d-accf-54229fe8ede2">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Worried About my life</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/Young%20T%20WokOngha%20Mongula%20Nge%20Kwashi.mp3?alt=media&token=18c9220d-2dfe-483d-acc9-dd8bf6c5a9a1">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Mongula Ngee Kwashi</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/Young%20T%20Tamu%20Dana%20Official%20Audio.mp3?alt=media&token=5e2a4489-3911-4176-8aaf-87a670785960">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Tamu Dana </span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-section">
+        <p class="text">Manxebe</p>
+        <div class="box-container">
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/Manxebe%20Ano%20olye%20Official%20video.mp3?alt=media&token=997b0f2a-fa2d-4273-80c2-cfef05a7c2fa">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Ano olye</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/Manxebe%20Gusheshe%20Official%20video.mp3?alt=media&token=d7d1f620-fb29-48ba-b783-8362fa90a00d">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Gusheshe</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/TopCheri%20-%20Omapendafule%20(Official%20Video)%20%20ft%20Manxebe.mp3?alt=media&token=308ab33f-c7e9-4d4c-9e80-44763b73ca70">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Omapendafule</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/Manxebe%20x%20Tate%20Buti%20(Oshambuletu)%20Official%20Music%20Video.mp3?alt=media&token=fdb27607-10c4-4250-82ec-09f2a615de52">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Oshambuletu</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/Champion%20_Manxebe%20Ft%20One%20blood%20(Official%20Video).mp3?alt=media&token=e14ec174-bca4-487e-8c32-4749a85bc7dc">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Champion</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/y2mate.com%20-%20MANXEBE%20Okwaito%20Opo%20taikala%20official%20Audio%20new%20album%202020.mp3?alt=media&token=20887a26-8d66-4f16-9a49-7ff2f1eba08c">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Mafia</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Okwaito</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/y2mate.com%20-%20Manxebe%20ft%20King%20Tee%20Dee%20Official%20video%20%20Feed%20myself.mp3?alt=media&token=e7a7d0dc-bd32-4fa2-9ba2-c67e9ae210a5">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">I feed my self</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">meditation
+
+                </span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-section">
+        <p class="text">Vikta JuiceBoy</p>
+        <div class="box-container">
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/y2mate.com%20-%20Vikta%20Juiceboy%20%20Omadhina%20Omanene%20feat%20Exit%20Official%20Audio.mp3?alt=media&token=19a80961-940c-4ec4-ad1c-5acc5bc5c1a2">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Omadhina Omanene FT Exit</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/y2mate.com%20-%20Vikta%20Juiceboy%20%20Superstar%20Remake%20Official%20Audio.mp3?alt=media&token=08b35d41-a5ae-4ea9-9c5f-9d696b68b502">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Superstar Remake</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/y2mate.com%20-%20Vikta%20Juiceboy%20%20Energy%20Official%20Video.mp3?alt=media&token=8e1507d3-81fe-46f4-8de9-1fa4c2a475ce">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Energy</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/y2mate.com%20-%20Vikta%20Juiceboy%20%20Kaboy%20Kamakili%20%20Feeling%20It%20Freestyle%20Video.mp3?alt=media&token=76782656-54c8-4dbb-a3b0-b20fcd01c18b">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Feeling</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/y2mate.com%20-%20Vikta%20Juiceboy%20%20Tshirt%20ft%20Tesh%20Official%20Video%20(1).mp3?alt=media&token=42d3053f-3894-4993-9e5e-87cc29594e5f">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">T-Shirt FT Tesh</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/y2mate.com%20-%20Vikta%20Juiceboy%20%20Scared%20ft%20Tulisan%20Official%20Video.mp3?alt=media&token=27442723-4d15-4918-87d7-a6cb119bf7ec">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Scared</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/y2mate.com%20-%20Vikta%20Juiceboy%20%20Olye%20Official%20Audio.mp3?alt=media&token=ef084b66-9192-4343-9a66-017aa814168f">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Olye</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/y2mate.com%20-%20Vikta%20Juiceboy%20%20It%20Is%20What%20It%20Is%20feat%20King%20Elegant%20Official%20Audio.mp3?alt=media&token=a0a6c9df-58be-4f12-99eb-aa43cb94a2cd">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">It is what it is </span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            
+            <div class="box" data-src="https://firebasestorage.googleapis.com/v0/b/namusic-575d9.appspot.com/o/y2mate.com%20-%20Vikta%20Juiceboy%20%20Been%20There%20Official%20Audio.mp3?alt=media&token=ea5f9661-c1be-4f17-975d-af545929fc09">
+                <div class="spinner"></div> <!-- Loading spinner -->
+                <button class="play-button" aria-label="Play">&#9658;</button> <!-- Play icon -->
+                <span class="song-title">Been there</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <script src="kwaito.js" defer></script> <!-- First JavaScript file -->
+</body>
+</html>

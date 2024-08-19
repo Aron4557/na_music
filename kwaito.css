@@ -1,0 +1,282 @@
+/* Reset some default styles */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+/* Navbar styling */
+.navbar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    color: #fff;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.6); /* Glowing green shadow for the navbar */
+    padding: 10px 0; /* Add some padding */
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.namc-picture {
+    width: 30vw; /* Increase the width */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position it on the left side */
+    left: -7vw; /* Adjust the distance from the left */
+    top: -7vw; /* Align to the top edge */
+}
+
+.navbar .logo {
+    font-size: 4vw; /* Responsive font size */
+    font-weight: bold;
+    background: linear-gradient(45deg, #0033a0 20%, #ffffff 20% 40%, #ffd100 40% 60%, #00853f 60% 80%, #ff0000 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Cinzel', serif;
+    margin: 0 2vw; /* Adjust spacing around the logo */
+}
+
+.navbar .menu-item {
+    margin: 0 1vw; /* Responsive margin */
+}
+
+.navbar .menu-item a {
+    color:black;
+    text-decoration: none;
+    font-size: 2vw; /* Responsive font size */
+    background-color: #2e8d2e; /* Green background */
+    padding: 10px 15px;
+    font-style: inherit;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(46, 167, 46, 0.8); /* Glowing green shadow */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transition for glowing and scaling */
+}
+
+.navbar .menu-item a:hover {
+    color: #000;
+    background-color: #00cc00; /* Darker green on hover */
+    box-shadow: 0 0 20px rgba(0, 255, 0, 1); /* Brighter green shadow on hover */
+    transform: scale(1.1); /* Slightly increase the size on hover */
+}
+
+/* Circle navigation below the navbar */
+.circle-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+.circle-navigation .circle {
+    width: 10vw; /* Responsive width */
+    height: 10vw; /* Responsive height */
+    border-radius: 50%;
+    margin: 0 1vw; /* Responsive margin */
+    background-size: cover; /* Ensure the background image covers the circle */
+    background-position: center; /* Center the background image */
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.6); /* Glowing green shadow */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transition for glowing and scaling */
+}
+
+.circle-navigation .circle:hover {
+    box-shadow: 0 0 25px rgba(0, 255, 0, 1); /* Brighter glowing shadow on hover */
+    transform: scale(1.1); /* Slightly increase the size on hover */
+}
+
+/* Add specific images to circles */
+#exit {
+    background-image: url('kwaitoe.jpeg'); /* Replace with actual image URL */
+}
+
+#kaboy {
+    background-image: url('kwaitok.png'); /* Replace with actual image URL */
+}
+
+#manxebe {
+    background-image: url('kwaitom.jpeg'); /* Replace with actual image URL */
+}
+
+#vikta {
+    background-image: url('kwaitoj.jpg'); /* Replace with actual image URL */
+}
+
+#king {
+    background-image: url('king.jpeg'); /* Replace with actual image URL */
+}
+
+/* Content section styling */
+.content-section {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+}
+
+.text {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the boxes */
+    gap: 10px; /* Space between boxes */
+}
+
+.box {
+    width: 150px; /* Small box width */
+    height: 150px; /* Small box height */
+    background-color: #ffcc00; /* Yellow background for boxes */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Position for absolute children */
+    overflow: hidden; /* Hide overflow to prevent showing audio player */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+/* Specific background images for each box */
+#box1 {
+    background-image: url('exit.jpeg');
+}
+
+#box2 {
+    background-image: url('kwaitoe.jpeg');
+}
+
+#box3 {
+    background-image: url('path/to/your-image3.jpg');
+}
+
+#box4 {
+    background-image: url('path/to/your-image4.jpg');
+}
+
+#box5 {
+    background-image: url('path/to/your-image5.jpg');
+}
+
+#box6 {
+    background-image: url('path/to/your-image6.jpg');
+}
+
+#box7 {
+    background-image: url('path/to/your-image7.jpg');
+}
+
+#box8 {
+    background-image: url('path/to/your-image8.jpg');
+}
+
+#box9 {
+    background-image: url('path/to/your-image9.jpg');
+}
+
+/* Play button styling */
+.play-button {
+    background-color: white; /* White background */
+    color: black; /* Black play icon */
+    border: none;
+    border-radius: 50%; /* Make the button circular */
+    width: 50px; /* Width of the circle */
+    height: 50px; /* Height of the circle */
+    font-size: 1.5rem; /* Size of the play icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    z-index: 1; /* Ensure the button is above other elements */
+}
+
+/* FontAwesome play and pause icons */
+.play-button.play::before {
+    content: "\f04b"; /* Play icon */
+    font-family: "Font Awesome 5 Free"; /* FontAwesome family */
+    font-weight: 900; /* Font weight for solid icons */
+}
+.play-button.pause::before {
+    content: "\f04c"; /* Pause icon */
+    font-family: "Font Awesome 5 Free"; /* FontAwesome family */
+    font-weight: 900; /* Font weight for solid icons */
+}
+
+/* Optional: Adjust hover effect */
+.play-button:hover {
+    background-color: #e0e0e0; /* Light grey background on hover */
+}
+
+/* Song title styling */
+.song-title {
+    width: 100%;
+    background-color: rgb(19, 191, 44);
+    color: black;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for title container */
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px 10px 0 0; /* Rounded corners at the top */
+}
+
+/* Progress bar styling */
+.progress-bar {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    height: 5px;
+    background: #ccc;
+    display: none; /* Hidden by default */
+}
+
+.progress {
+    height: 100%;
+    background: #00ff00; /* Green progress */
+    width: 0%;
+}
+
+/* Spinner styling */
+.spinner {
+    border: 8px solid #2ab441; /* Light grey background */
+    border-top: 8px solid #00ff00; /* Green spinner */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: spin 1s linear infinite;
+    display: none; /* Hidden by default */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
